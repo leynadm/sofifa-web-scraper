@@ -160,7 +160,7 @@ async function getPlayerDetailsCsvRow(url) {
 
     function getPlayerAttributes() {
         // 7. player_attributes
-        const player_attr_grid1 = $(grids[2])
+        const player_attr_grid1 = $(grids[3])
             .find('.col p')
             .each((i, e) => {
                 $(e).find('span.plus')?.remove();
@@ -169,7 +169,7 @@ async function getPlayerDetailsCsvRow(url) {
             .map((i, el) => $(el).text())
             .get();
 
-        const player_attr_grid2 = $(grids[3]).find('.col p')
+        const player_attr_grid2 = $(grids[4]).find('.col p')
             .each((i, e) => {
                 $(e).find('span.plus')?.remove();
                 $(e).find('span.minus')?.remove();
